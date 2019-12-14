@@ -1,27 +1,42 @@
 #INSPECTOR LEKAS
-lista=[]
-i=0
-lista=[1,1,1,1,1]
+lista = []
+lista1 = []
+lista2 = []
+negative_numbers=[]
+positive_numbers=[]
+i,k = 0,0
+'''
 def add():
     k=0
     sum=0
     for j in lista:
-        sum=j+sum
+        sum=int(j)+sum
         k+=1
-    return sum/k
-print(add())
-'''        
+        addition=sum/k
+    return addition
+print(add()) '''
 while True:
-    i+=1
+    k+=1
     number=input("give the number or stop")
     if number=="stop":
         break
-    lista.append(number)
-    if i==5 :
-        break
+    else:
+        lista.append(int(number))
+    if k==5 :
+        break    
+y=sum(lista)/k 
+print(y)       
 for i in lista:
     if i<11:
         lista1.append(i)
-len(lista1)
-    if i<add()/2:    
-'''
+    if  i<0:
+        negative_numbers.append(i)
+    if i>0:
+         positive_numbers.append(i)
+print(len(lista1))
+for j in lista:
+    if j<(y/2):
+     lista2.append(j)
+print(len(lista2))  
+print(len(negative_numbers))
+print(len(positive_numbers))
