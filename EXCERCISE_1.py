@@ -5,16 +5,7 @@ lista2 = []
 negative_numbers=[]
 positive_numbers=[]
 i,k = 0,0
-'''
-def add():
-    k=0
-    sum=0
-    for j in lista:
-        sum=int(j)+sum
-        k+=1
-        addition=sum/k
-    return addition
-print(add()) '''
+
 while True:
     k+=1
     number=input("give the number or stop")
